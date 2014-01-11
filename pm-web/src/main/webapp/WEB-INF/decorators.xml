@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/templates">
+  <excludes>
+    <pattern>/api/*</pattern>
+    <pattern>/css/*</pattern>
+    <pattern>/images/*</pattern>
+    <pattern>/js/*</pattern>
+    <pattern>/libs/*</pattern>
+  </excludes>
+
+  <decorator name="admin" page="template_admin.jsp">
+    <pattern>/admin*</pattern>
+  </decorator>
+
+  <decorator name="default" page="template.jsp">
+    <pattern>/*</pattern>
+  </decorator>
+
+</decorators>

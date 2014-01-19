@@ -50,7 +50,8 @@
     </c:if>
     <d:body />
   </div>
-
-  <footer></footer>
+  <footer>
+    <div class="container">&copy;&nbsp;2014&nbsp;pmERP</div>
+  </footer>
 </body>
 </html>

@@ -7,15 +7,14 @@
 <title>日港</title>
 
 <!-- Bootstrap framework -->
-<link rel="stylesheet"
-	href="<c:url value="/css/bootstrap.min.css" />" />
+<link rel="stylesheet" href="<c:url value="/css/bootstrap.min.css" />" />
 <link rel="stylesheet"
 	href="<c:url value="/css/bootstrap-responsive.min.css" />" />
 <!-- jQuery UI theme -->
 <link rel="stylesheet"
 	href="<c:url value="/libs/jquery-ui/css/Aristo/Aristo.css" />" />
-<link rel="stylesheet"
-	href="<c:url value="/css/blue.css"/>" id="link_theme"  />
+<link rel="stylesheet" href="<c:url value="/css/blue.css"/>"
+	id="link_theme" />
 <!-- tooltips-->
 <link rel="stylesheet"
 	href="<c:url value="/libs/jBreadcrumbs/css/BreadCrumb.css" />" />
@@ -90,6 +89,58 @@
 	//* hide all elements & show preloader
 	document.documentElement.className += 'js';
 </script>
+<script src="js/jquery.min.js"></script>
+<script src="libs/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
+<!-- touch events for jquery ui-->
+<script src="js/forms/jquery.ui.touch-punch.min.js"></script>
+<!-- easing plugin -->
+<script src="js/jquery.easing.1.3.min.js"></script>
+<!-- smart resize event -->
+<script src="js/jquery.debouncedresize.min.js"></script>
+<!-- js cookie plugin -->
+<script src="js/jquery.cookie.min.js"></script>
+<!-- main bootstrap js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- bootstrap plugins -->
+<script src="js/bootstrap.plugins.min.js"></script>
+<!-- code prettifier -->
+<script src="libs/google-code-prettify/prettify.min.js"></script>
+<!-- sticky messages -->
+<script src="libs/sticky/sticky.min.js"></script>
+<!-- tooltips -->
+<script src="libs/qtip2/jquery.qtip.min.js"></script>
+<!-- lightbox -->
+<script src="libs/colorbox/jquery.colorbox.min.js"></script>
+<!-- jBreadcrumbs -->
+<script src="libs/jBreadcrumbs/js/jquery.jBreadCrumb.1.1.min.js"></script>
+<!-- hidden elements width/height -->
+<script src="js/jquery.actual.min.js"></script>
+<!-- scroll -->
+<script src="libs/antiscroll/antiscroll.js"></script>
+<script src="libs/antiscroll/jquery-mousewheel.js"></script>
+<!-- fix for ios orientation change -->
+<script src="js/ios-orientationchange-fix.js"></script>
+<!-- to top -->
+<script src="libs/UItoTop/jquery.ui.totop.min.js"></script>
+<!-- mobile nav -->
+<script src="js/selectNav.js"></script>
+
+<!-- common functions -->
+<script src="js/gebo_common.js"></script>
+
+
+<!-- multi-column layout -->
+<script src="js/jquery.imagesloaded.min.js"></script>
+<script src="js/jquery.wookmark.js"></script>
+<!-- responsive table -->
+<script src="js/jquery.mediaTable.min.js"></script>
+<!-- small charts -->
+<script src="js/jquery.peity.min.js"></script>
+<!-- calendar -->
+<script src="libs/fullcalendar/fullcalendar.min.js"></script>
+<!-- sortable/filterable list -->
+<script src="libs/list_js/list.min.js"></script>
+<script src="libs/list_js/plugins/paging/list.paging.min.js"></script>
 <d:head />
 </head>
 <body>
@@ -117,8 +168,8 @@
 							</li>
 							<li class="divider-vertical hidden-phone hidden-tablet"></li>
 							<li class="dropdown"><a href="#" class="dropdown-toggle"
-								data-toggle="dropdown"><img src="images/user_avatar.png" alt=""
-									class="user_avatar" />Johny Smith <b class="caret"></b></a>
+								data-toggle="dropdown"><img src="images/user_avatar.png"
+									alt="" class="user_avatar" />Will Yan <b class="caret"></b></a>
 								<ul class="dropdown-menu">
 									<li><a href="user_profile.htm">My Profile</a></li>
 									<li class="divider"></li>
@@ -139,7 +190,8 @@
 									class="icon-th icon-white"></i> Components <b class="caret"></b></a>
 								<ul class="dropdown-menu">
 									<li><a href="alerts_btns.htm">Alerts & Buttons</a></li>
-									<li class="dropdown"><a href="#">Sub menu <b class="caret-right"></b></a>
+									<li class="dropdown"><a href="#">Sub menu <b
+											class="caret-right"></b></a>
 										<ul class="dropdown-menu">
 											<li><a href="#">Sub menu 1.1</a></li>
 											<li><a href="#">Sub menu 1.4 <b class="caret-right"></b></a>
@@ -175,7 +227,9 @@
 
 
 		<div id="contentwrapper">
-			<div class="main_content"><d:body /></div>
+			<div class="main_content">
+				<d:body />
+			</div>
 		</div>
 	</div>
 	<a href="javascript:void(0)" class="sidebar_switch on_switch ttip_r"
@@ -281,58 +335,7 @@
 
 	</div>
 
-	<script src="js/jquery.min.js"></script>
-	<script src="libs/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
-	<!-- touch events for jquery ui-->
-	<script src="js/forms/jquery.ui.touch-punch.min.js"></script>
-	<!-- easing plugin -->
-	<script src="js/jquery.easing.1.3.min.js"></script>
-	<!-- smart resize event -->
-	<script src="js/jquery.debouncedresize.min.js"></script>
-	<!-- js cookie plugin -->
-	<script src="js/jquery.cookie.min.js"></script>
-	<!-- main bootstrap js -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- bootstrap plugins -->
-	<script src="js/bootstrap.plugins.min.js"></script>
-	<!-- code prettifier -->
-	<script src="libs/google-code-prettify/prettify.min.js"></script>
-	<!-- sticky messages -->
-	<script src="libs/sticky/sticky.min.js"></script>
-	<!-- tooltips -->
-	<script src="libs/qtip2/jquery.qtip.min.js"></script>
-	<!-- lightbox -->
-	<script src="libs/colorbox/jquery.colorbox.min.js"></script>
-	<!-- jBreadcrumbs -->
-	<script src="libs/jBreadcrumbs/js/jquery.jBreadCrumb.1.1.min.js"></script>
-	<!-- hidden elements width/height -->
-	<script src="js/jquery.actual.min.js"></script>
-	<!-- scroll -->
-	<script src="libs/antiscroll/antiscroll.js"></script>
-	<script src="libs/antiscroll/jquery-mousewheel.js"></script>
-	<!-- fix for ios orientation change -->
-	<script src="js/ios-orientationchange-fix.js"></script>
-	<!-- to top -->
-	<script src="libs/UItoTop/jquery.ui.totop.min.js"></script>
-	<!-- mobile nav -->
-	<script src="js/selectNav.js"></script>
 
-	<!-- common functions -->
-	<script src="js/gebo_common.js"></script>
-
-
-	<!-- multi-column layout -->
-	<script src="js/jquery.imagesloaded.min.js"></script>
-	<script src="js/jquery.wookmark.js"></script>
-	<!-- responsive table -->
-	<script src="js/jquery.mediaTable.min.js"></script>
-	<!-- small charts -->
-	<script src="js/jquery.peity.min.js"></script>
-	<!-- calendar -->
-	<script src="libs/fullcalendar/fullcalendar.min.js"></script>
-	<!-- sortable/filterable list -->
-	<script src="libs/list_js/list.min.js"></script>
-	<script src="libs/list_js/plugins/paging/list.paging.min.js"></script>
 	<!-- dashboard functions -->
 
 	<script>
@@ -358,8 +361,8 @@
 
 						});
 	</script>
-  <footer>
-    <div class="container">&copy;&nbsp;2014&nbsp;pmERP</div>
-  </footer>
+	<footer>
+		<div class="container">&copy;&nbsp;2014&nbsp;pmERP</div>
+	</footer>
 </body>
 </html>

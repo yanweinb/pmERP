@@ -90,6 +90,7 @@
 	//* hide all elements & show preloader
 	document.documentElement.className += 'js';
 </script>
+<d:head />
 </head>
 <body>
 	<div id="<c:url value="/loading_layer" />" style="display: none">
@@ -138,8 +139,7 @@
 									class="icon-th icon-white"></i> Components <b class="caret"></b></a>
 								<ul class="dropdown-menu">
 									<li><a href="alerts_btns.htm">Alerts & Buttons</a></li>
-									<li class="dropdown"><a href="#">Sub menu <b
-											class="caret-right"></b></a>
+									<li class="dropdown"><a href="#">Sub menu <b class="caret-right"></b></a>
 										<ul class="dropdown-menu">
 											<li><a href="#">Sub menu 1.1</a></li>
 											<li><a href="#">Sub menu 1.4 <b class="caret-right"></b></a>
@@ -175,7 +175,7 @@
 
 
 		<div id="contentwrapper">
-			<div class="main_content"></div>
+			<div class="main_content"><d:body /></div>
 		</div>
 	</div>
 	<a href="javascript:void(0)" class="sidebar_switch on_switch ttip_r"
@@ -358,7 +358,8 @@
 
 						});
 	</script>
-
-	</div>
+  <footer>
+    <div class="container">&copy;&nbsp;2014&nbsp;pmERP</div>
+  </footer>
 </body>
 </html>

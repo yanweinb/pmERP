@@ -4,9 +4,12 @@ import java.net.URI;
 
 import javax.ws.rs.core.Response;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.pmerp.service.*;
 /**
- * @author xueqiangmi
- * @since Apr 30, 2013
+ * @author yanwei	
+ * @since Mar 22, 2014
  */
 public abstract class BaseResource {
 
@@ -19,5 +22,7 @@ public abstract class BaseResource {
       return null;
     }
   }
+  @Autowired
+  protected OrgnizationService orgnizationService;
 
 }

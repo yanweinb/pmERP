@@ -89,58 +89,58 @@
 	//* hide all elements & show preloader
 	document.documentElement.className += 'js';
 </script>
-<script src="js/jquery.min.js"></script>
-<script src="libs/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
+<script src="<c:url value="/js/jquery.min.js" />"></script>
+<script src="<c:url value="/libs/jquery-ui/jquery-ui-1.8.23.custom.min.js" />"></script>
 <!-- touch events for jquery ui-->
-<script src="js/forms/jquery.ui.touch-punch.min.js"></script>
+<script src="<c:url value="/js/forms/jquery.ui.touch-punch.min.js" />"></script>
 <!-- easing plugin -->
-<script src="js/jquery.easing.1.3.min.js"></script>
+<script src="<c:url value="/js/jquery.easing.1.3.min.js" />"></script>
 <!-- smart resize event -->
-<script src="js/jquery.debouncedresize.min.js"></script>
+<script src="<c:url value="/js/jquery.debouncedresize.min.js" />"></script>
 <!-- js cookie plugin -->
-<script src="js/jquery.cookie.min.js"></script>
+<script src="<c:url value="/js/jquery.cookie.min.js" />"></script>
 <!-- main bootstrap js -->
-<script src="js/bootstrap.min.js"></script>
+<script src="<c:url value="/js/bootstrap.min.js" />"></script>
 <!-- bootstrap plugins -->
-<script src="js/bootstrap.plugins.min.js"></script>
+<script src="<c:url value="/js/bootstrap.plugins.min.js" />"></script>
 <!-- code prettifier -->
-<script src="libs/google-code-prettify/prettify.min.js"></script>
+<script src="<c:url value="/libs/google-code-prettify/prettify.min.js" />"></script>
 <!-- sticky messages -->
-<script src="libs/sticky/sticky.min.js"></script>
+<script src="<c:url value="/libs/sticky/sticky.min.js" />"></script>
 <!-- tooltips -->
-<script src="libs/qtip2/jquery.qtip.min.js"></script>
+<script src="<c:url value="/libs/qtip2/jquery.qtip.min.js" />"></script>
 <!-- lightbox -->
-<script src="libs/colorbox/jquery.colorbox.min.js"></script>
+<script src="<c:url value="/libs/colorbox/jquery.colorbox.min.js" />"></script>
 <!-- jBreadcrumbs -->
-<script src="libs/jBreadcrumbs/js/jquery.jBreadCrumb.1.1.min.js"></script>
+<script src="<c:url value="/libs/jBreadcrumbs/js/jquery.jBreadCrumb.1.1.min.js" />"></script>
 <!-- hidden elements width/height -->
-<script src="js/jquery.actual.min.js"></script>
+<script src="<c:url value="/js/jquery.actual.min.js" />"></script>
 <!-- scroll -->
-<script src="libs/antiscroll/antiscroll.js"></script>
-<script src="libs/antiscroll/jquery-mousewheel.js"></script>
+<script src="<c:url value="/libs/antiscroll/antiscroll.js" />"></script>
+<script src="<c:url value="/libs/antiscroll/jquery-mousewheel.js" />"></script>
 <!-- fix for ios orientation change -->
-<script src="js/ios-orientationchange-fix.js"></script>
+<script src="<c:url value="/js/ios-orientationchange-fix.js" />"></script>
 <!-- to top -->
-<script src="libs/UItoTop/jquery.ui.totop.min.js"></script>
+<script src="<c:url value="/libs/UItoTop/jquery.ui.totop.min.js" />"></script>
 <!-- mobile nav -->
-<script src="js/selectNav.js"></script>
+<script src="<c:url value="/js/selectNav.js" />"></script>
 
 <!-- common functions -->
-<script src="js/gebo_common.js"></script>
+<script src="<c:url value="/js/gebo_common.js" />"></script>
 
 
 <!-- multi-column layout -->
-<script src="js/jquery.imagesloaded.min.js"></script>
-<script src="js/jquery.wookmark.js"></script>
+<script src="<c:url value="/js/jquery.imagesloaded.min.js" />"></script>
+<script src="<c:url value="/js/jquery.wookmark.js" />"></script>
 <!-- responsive table -->
-<script src="js/jquery.mediaTable.min.js"></script>
+<script src="<c:url value="/js/jquery.mediaTable.min.js" />"></script>
 <!-- small charts -->
-<script src="js/jquery.peity.min.js"></script>
+<script src="<c:url value="/js/jquery.peity.min.js" />"></script>
 <!-- calendar -->
-<script src="libs/fullcalendar/fullcalendar.min.js"></script>
+<script src="<c:url value="/libs/fullcalendar/fullcalendar.min.js" />"></script>
 <!-- sortable/filterable list -->
-<script src="libs/list_js/list.min.js"></script>
-<script src="libs/list_js/plugins/paging/list.paging.min.js"></script>
+<script src="<c:url value="/libs/list_js/list.min.js" />"></script>
+<script src="<c:url value="/libs/list_js/plugins/paging/list.paging.min.js" />"></script>
 <d:head />
 </head>
 <body>
@@ -168,7 +168,7 @@
 							</li>
 							<li class="divider-vertical hidden-phone hidden-tablet"></li>
 							<li class="dropdown"><a href="#" class="dropdown-toggle"
-								data-toggle="dropdown"><img src="images/user_avatar.png"
+								data-toggle="dropdown"><img src="<c:url value="/images/user_avatar.png"/>"
 									alt="" class="user_avatar" />Will Yan <b class="caret"></b></a>
 								<ul class="dropdown-menu">
 									<li><a href="user_profile.htm">My Profile</a></li>
@@ -317,9 +317,17 @@
 								<div class="accordion-heading">
 									<a href="#collapse7" data-parent="#side_accordion"
 										data-toggle="collapse" class="accordion-toggle"> <i
-										class="icon-th"></i> Calculator
+										class="icon-th"></i> 系统管理
 									</a>
+									<div class="accordion-inner">
+										<ul class="nav nav-list">
+										 <li role="presentation"><a role="menuitem" tabindex="-1"
+                  href="<c:url value="/systemMgr/userIndex" />">设置</a></li>
+										</ul>
+										</div>
 								</div>
+								
+								               
 							</div>
 
 						</div>

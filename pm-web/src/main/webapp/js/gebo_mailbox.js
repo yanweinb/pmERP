@@ -204,7 +204,7 @@
             $("#mail_attachments").pluploadQueue({
                 // General settings
                 runtimes : 'html5,flash,silverlight',
-                url : 'lib/plupload/examples/upload.php',
+                url : 'libs/plupload/examples/upload.php',
                 max_file_size : '10mb',
                 chunk_size : '1mb',
                 unique_names : true,
@@ -216,10 +216,10 @@
                 ],
         
                 // Flash settings
-                flash_swf_url : 'lib/plupload/js/plupload.flash.swf',
+                flash_swf_url : 'libs/plupload/js/plupload.flash.swf',
         
                 // Silverlight settings
-                silverlight_xap_url : 'lib/plupload/js/plupload.silverlight.xap'
+                silverlight_xap_url : 'libs/plupload/js/plupload.silverlight.xap'
             });
             
             //* hide upload button

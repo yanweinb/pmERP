@@ -41,5 +41,10 @@ public class CompanyMgrResource extends BaseResource {
     return Response.ok(new Viewable("orgIndex", orgnizations)).build();
   }
 
-
+  @GET
+  @Path("process")
+  public Response processIndex(@DefaultValue("1") @QueryParam("page") int page) {
+    List<Orgnization> orgnizations = orgnizationService.list(page);
+    return Response.ok(new Viewable("processIndex", orgnizations)).build();
+  }
 }

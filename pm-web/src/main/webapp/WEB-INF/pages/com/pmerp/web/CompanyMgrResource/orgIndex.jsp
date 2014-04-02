@@ -7,10 +7,8 @@
 </script>
 <body>
 	<div class="container">
-		<table width="300">
 			<a href="<c:url value="/salesMgr/coupon/add" />"
 				class="btn btn-success pull-center">增加</a>
-		</table>
 		<div class="span12 mt-small">
 			<table class="table table-bordered table-condensed table-hover">
 				<thead>
@@ -35,7 +33,7 @@
 			</table>
 			<div class="pagination pagination-centered">
 				<ul>
-					<li><a tager="_blank"
+					<li><a target="_blank"
 						href="<c:url value="/company/org?page=1" />">首页</a></li>
 					<c:forEach var="pageNumber" items="${requestScope.pageNumbers}">
 						<li><a
@@ -47,6 +45,7 @@
 			</div>
 		</div>
 		</div>
+		<!-- 
 		<div class="row-fluid">
 		<div class="span12">
 		<h3 class="heading">Default Datatable</h3>
@@ -74,13 +73,13 @@
 	</div>
 
 	</div>
-
+-->
     <!-- datatable -->
 	<script src="<c:url value="/libs/datatables/jquery.dataTables.min.js"/>" ></script>
 	<script src="<c:url value="/libs/datatables/extras/Scroller/media/js/Scroller.min.js"/>" ></script>
-	<!-- datatable functions -->
+	<!-- datatable functions 
 	<script src="<c:url value="/js/gebo_datatables.js"/>" ></script>
-
+-->
 	    <script>
         $(document).ready(function() {
 			//* jQuery.browser.mobile (http://detectmobilebrowser.com/)

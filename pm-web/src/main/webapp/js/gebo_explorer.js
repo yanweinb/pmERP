@@ -21,7 +21,7 @@
 		};
 		$('textarea#wysiwg_full').tinymce({
 			// Location of TinyMCE script
-			script_url 							: 'lib/tiny_mce/tiny_mce.js',
+			script_url 							: 'libs/tiny_mce/tiny_mce.js',
 			// General options
 			theme 								: "advanced",
 			plugins 							: "autoresize,style,table,advhr,advimage,advlink,emotions,inlinepopups,preview,media,contextmenu,paste,fullscreen,noneditable,xhtmlxtras,template,advlist",

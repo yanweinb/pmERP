@@ -90,7 +90,8 @@
 	document.documentElement.className += 'js';
 </script>
 <script src="<c:url value="/js/jquery.min.js" />"></script>
-<script src="<c:url value="/libs/jquery-ui/jquery-ui-1.8.23.custom.min.js" />"></script>
+<script
+	src="<c:url value="/libs/jquery-ui/jquery-ui-1.8.23.custom.min.js" />"></script>
 <!-- touch events for jquery ui-->
 <script src="<c:url value="/js/forms/jquery.ui.touch-punch.min.js" />"></script>
 <!-- easing plugin -->
@@ -104,7 +105,8 @@
 <!-- bootstrap plugins -->
 <script src="<c:url value="/js/bootstrap.plugins.min.js" />"></script>
 <!-- code prettifier -->
-<script src="<c:url value="/libs/google-code-prettify/prettify.min.js" />"></script>
+<script
+	src="<c:url value="/libs/google-code-prettify/prettify.min.js" />"></script>
 <!-- sticky messages -->
 <script src="<c:url value="/libs/sticky/sticky.min.js" />"></script>
 <!-- tooltips -->
@@ -112,7 +114,8 @@
 <!-- lightbox -->
 <script src="<c:url value="/libs/colorbox/jquery.colorbox.min.js" />"></script>
 <!-- jBreadcrumbs -->
-<script src="<c:url value="/libs/jBreadcrumbs/js/jquery.jBreadCrumb.1.1.min.js" />"></script>
+<script
+	src="<c:url value="/libs/jBreadcrumbs/js/jquery.jBreadCrumb.1.1.min.js" />"></script>
 <!-- hidden elements width/height -->
 <script src="<c:url value="/js/jquery.actual.min.js" />"></script>
 <!-- scroll -->
@@ -140,7 +143,8 @@
 <script src="<c:url value="/libs/fullcalendar/fullcalendar.min.js" />"></script>
 <!-- sortable/filterable list -->
 <script src="<c:url value="/libs/list_js/list.min.js" />"></script>
-<script src="<c:url value="/libs/list_js/plugins/paging/list.paging.min.js" />"></script>
+<script
+	src="<c:url value="/libs/list_js/plugins/paging/list.paging.min.js" />"></script>
 <d:head />
 </head>
 <body>
@@ -168,8 +172,9 @@
 							</li>
 							<li class="divider-vertical hidden-phone hidden-tablet"></li>
 							<li class="dropdown"><a href="#" class="dropdown-toggle"
-								data-toggle="dropdown"><img src="<c:url value="/images/user_avatar.png"/>"
-									alt="" class="user_avatar" />Will Yan <b class="caret"></b></a>
+								data-toggle="dropdown"><img
+									src="<c:url value="/images/user_avatar.png"/>" alt=""
+									class="user_avatar" />Will Yan <b class="caret"></b></a>
 								<ul class="dropdown-menu">
 									<li><a href="user_profile.htm">My Profile</a></li>
 									<li class="divider"></li>
@@ -263,13 +268,13 @@
 								<div class="accordion-heading">
 									<a href="#collapseTwo" data-parent="#side_accordion"
 										data-toggle="collapse" class="accordion-toggle"> <i
-										class="icon-th"></i> Modules
+										class="icon-th"></i> 营业科
 									</a>
 								</div>
 								<div class="accordion-body collapse" id="collapseTwo">
 									<div class="accordion-inner">
 										<ul class="nav nav-list">
-											<li><a href="javascript:void(0)">Content blocks</a></li>
+											<li><a href="<c:url value="/warehouse/bom" />">客户管理</a></li>
 											<li><a href="javascript:void(0)">Tags</a></li>
 										</ul>
 									</div>
@@ -279,15 +284,14 @@
 								<div class="accordion-heading">
 									<a href="#collapseFour" data-parent="#side_accordion"
 										data-toggle="collapse" class="accordion-toggle"> <i
-										class="icon-cog"></i> Configuration
+										class="icon-cog"></i>生产科
 									</a>
 								</div>
 								<div class="accordion-body collapse" id="collapseFour">
 									<div class="accordion-inner">
 										<ul class="nav nav-list">
 											<li class="nav-header">People</li>
-											<li class="active"><a href="javascript:void(0)">Account
-													Settings</a></li>
+											<li class="active"><a href="javascript:void(0)">物料管理</a></li>
 											<li><a href="javascript:void(0)">IP Adress Blocking</a></li>
 											<li class="nav-header">System</li>
 											<li><a href="javascript:void(0)">Site information</a></li>
@@ -301,15 +305,17 @@
 							</div>
 							<div class="accordion-group">
 								<div class="accordion-heading">
-									<a href="#collapseLong" data-parent="#side_accordion"
+									<a href="#collapseWarehouse" data-parent="#side_accordion"
 										data-toggle="collapse" class="accordion-toggle"> <i
-										class="icon-leaf"></i> Long content (scrollbar)
+										class="icon-leaf"></i> 仓库管理
 									</a>
 								</div>
-								<div class="accordion-body collapse" id="collapseLong">
+								<div class="accordion-body collapse" id="collapseWarehouse">
 									<div class="accordion-inner">
-										Some text to show sidebar scroll bar<br> Lorem ipsum
-										dolor sit amet, consectetur adipiscing elit.
+										<ul class="nav nav-list">
+											<li><a href="<c:url value="/warehouse/bom" />">物料库</a></li>
+											<li><a href="<c:url value="/warehouse/prd" />">成品库</a></li>
+										</ul>
 									</div>
 								</div>
 							</div>
@@ -321,13 +327,15 @@
 									</a>
 									<div class="accordion-inner">
 										<ul class="nav nav-list">
-										 <li role="presentation"><a role="menuitem" tabindex="-1"
-                  href="<c:url value="/systemMgr/userIndex" />">设置</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1"
+												href="<c:url value="/company/org" />">员工管理</a></li>
+												<li><a href="<c:url value="/company/warehouse" />">仓库管理</a></li>
+												<li><a href="<c:url value="/company/process" />">生产流程管理</a></li>
 										</ul>
-										</div>
+									</div>
 								</div>
-								
-								               
+
+
 							</div>
 
 						</div>

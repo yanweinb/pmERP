@@ -369,7 +369,7 @@
             };
             $('textarea#wysiwg_full').tinymce({
                 // Location of TinyMCE script
-                script_url 							: 'lib/tiny_mce/tiny_mce.js',
+                script_url 							: 'libs/tiny_mce/tiny_mce.js',
                 // General options
                 theme 								: "advanced",
                 plugins 							: "autoresize,style,table,advhr,advimage,advlink,emotions,inlinepopups,preview,media,contextmenu,paste,fullscreen,noneditable,xhtmlxtras,template,advlist",
@@ -418,7 +418,7 @@
             $("#multi_upload").pluploadQueue({
                 // General settings
                 runtimes : 'html5,flash,silverlight',
-                url : 'lib/plupload/examples/upload.php',
+                url : 'libs/plupload/examples/upload.php',
                 max_file_size : '10mb',
                 chunk_size : '1mb',
                 unique_names : true,
@@ -431,10 +431,10 @@
                 ],
         
                 // Flash settings
-                flash_swf_url : 'lib/plupload/js/plupload.flash.swf',
+                flash_swf_url : 'libs/plupload/js/plupload.flash.swf',
         
                 // Silverlight settings
-                silverlight_xap_url : 'lib/plupload/js/plupload.silverlight.xap'
+                silverlight_xap_url : 'libs/plupload/js/plupload.silverlight.xap'
             });
         }
     };
